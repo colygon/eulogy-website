@@ -1,0 +1,22 @@
+{
+  "name": "eulogy-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page for Eulogy, a service that transforms photographs into immersive memorial experiences",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve",
+    "dev": "npx live-server"
+  },
+  "keywords": [
+    "eulogy",
+    "memorial",
+    "landing-page",
+    "immersive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}

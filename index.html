@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eulogy | Step Inside Your Memories</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>eulogy</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#pre-order">Join Waitlist</a></li>
+                    <li><a href="#pre-order">Pre-order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <!-- Video with dark overlay -->
+        <div style="position: absolute; width: 100%; height: 100%; z-index: -1;">
+            <video autoplay loop muted playsinline style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+                <source src="videos/granny.mp4" type="video/mp4">
+                <!-- Fallback to image if video doesn't load -->
+                <img src="images/granny.png" alt="Grandmother with family" style="width: 100%; height: 100%; object-fit: cover;">
+            </video>
+            <!-- Dark overlay for better text visibility -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3);"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Make memories immortal</h2>
+                <p>Eulogy transforms photographs, videos, music, stories, and conversations into immersive memorial experiences.</p>
+                <div class="cta-form" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                    <input type="email" placeholder="Your email" style="background-color: white; color: #333; flex: 1; border-radius: 24px 0 0 24px; border: none;">
+                    <button class="btn-primary" style="border-radius: 0 24px 24px 0; margin-right: 10px;">Join Waitlist</button>
+                    <a href="#pre-order" class="btn-primary">Pre-order →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- As Seen on Netflix Section -->
+    <section class="netflix">
+        <div class="container">
+            <div class="netflix-content">
+                <div class="netflix-logo">
+                    <div style="background-color: #E50914; color: white; font-weight: bold; padding: 10px 20px; display: inline-block;">NETFLIX</div>
+                </div>
+                <h2>As Seen on <span class="highlight">Black Mirror</span></h2>
+                <p class="netflix-description">
+                    Eulogy's groundbreaking memory technology was featured in the acclaimed Netflix series Black Mirror. 
+                    The episode showcased how our technology transforms the way we remember and honor our loved ones, 
+                    creating immersive experiences that bring memories to life.
+                </p>
+                <div class="netflix-quote">
+                    <p>"A haunting and beautiful exploration of grief and memory in the digital age."</p>
+                    <cite>— Entertainment Weekly</cite>
+                </div>
+                <a href="#pre-order" class="btn-primary">Experience it yourself →</a>
+            </div>
+            <div class="netflix-gallery">
+                <div class="netflix-main-image">
+                    <img src="images/netflix7.jpg" alt="Black Mirror featuring Eulogy" class="featured-image">
+                </div>
+                <div class="netflix-thumbnails">
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix1.webp" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix1.webp')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix2.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix2.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix3.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix3.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix4.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix4.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix5.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix5.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix7.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix7.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix8.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix8.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix9.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix9.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix10.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix10.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix11.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix11.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix12.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix12.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix13.jpg" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix13.jpg')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix20.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix20.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix21.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix21.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix23.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix23.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix33.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix33.png')">
+                    </div>
+                    <div class="netflix-thumbnail">
+                        <img src="images/netflix34.png" alt="Black Mirror scene" onclick="changeNetflixImage('images/netflix34.png')">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Covered By Section -->
+    <section class="covered-by">
+        <div class="container">
+            <h2>Covered By</h2>
+            <p class="covered-by-subtitle">Eulogy has been featured in leading publications worldwide</p>
+            
+            <div class="media-outlets" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 1000px; margin: 0 auto;">
+                <a href="https://www.cosmopolitan.com/entertainment/tv/a64458186/black-mirror-episode-3-hotel-reverie-ending-explained/" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo cosmopolitan" style="color: #F232A4; font-weight: bold;">Cosmopolitan</div>
+                </a>
+                <a href="https://www.vulture.com/article/black-mirror-recap-season-7-episode-5-eulogy.html" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo vulture" style="color: #FFD700; font-weight: bold;">Vulture</div>
+                </a>
+                <a href="https://www.bbc.com/culture/article/20250411-black-mirror-season-sevens-most-devastating-episode-ever" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo bbc" style="color: white; font-weight: bold;">BBC</div>
+                </a>
+                <a href="https://www.cbr.com/black-mirror-season-7-eulogy-ending-explained/" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo cbr" style="color: #FF6B6B; font-weight: bold;">CBR</div>
+                </a>
+                <a href="https://ew.com/black-mirror-season-7-episode-guide-11712277" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo ew" style="color: #FF9900; font-weight: bold;">Entertainment Weekly</div>
+                </a>
+                <a href="https://gamerant.com/black-mirror-season-7-episode-5-eulogy-review/" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo gamerant" style="color: #4CAF50; font-weight: bold;">GameRant</div>
+                </a>
+                <a href="https://www.netflix.com/tudum/articles/black-mirror-eulogy-ending-explained" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo netflix-tudum" style="color: #E50914; font-weight: bold;">Netflix Tudum</div>
+                </a>
+                <a href="https://www.huffpost.com/entry/black-mirror-season-7-episode-5-review_n_67f6a327e4b0212bce865502" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo huffpost" style="color: #0088CC; font-weight: bold;">HuffPost</div>
+                </a>
+                <a href="https://fictionhorizon.com/black-mirror-season-7-episode-5-eulogy-recap-and-ending-explained/" target="_blank" class="media-outlet" style="display: block; background-color: #222; padding: 15px; text-align: center; border-radius: 5px;">
+                    <div class="media-logo fiction-horizon" style="color: #9C27B0; font-weight: bold;">Fiction Horizon</div>
+                </a>
+            </div>
+            
+            <div class="covered-by-cta">
+                <a href="#pre-order" class="btn-primary">Join the conversation →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What People Are Saying</h2>
+            <div class="testimonial-carousel">
+                <div class="testimonial">
+                    <div class="quote">"Eulogy helped me reconnect with memories I thought were lost forever."</div>
+                    <div class="author">Michael T.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The experience of stepping into old photos of my mother was incredibly moving."</div>
+                    <div class="author">Sarah L.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"Creating this memorial helped our family process our grief in a meaningful way."</div>
+                    <div class="author">David R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="product" class="product-gallery">
+        <div class="container">
+            <h2>Full Spectrum Memory Curation</h2>
+            <p class="gallery-subtitle">See how our guide disc transforms the way you connect with memories</p>
+            
+            <div class="product-video-container" style="margin-bottom: 40px; text-align: center;">
+                <video controls width="100%" style="max-width: 800px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <source src="videos/productvideo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/holding the disc.png" alt="Person holding the Eulogy device" class="gallery-image">
+                    <div class="gallery-caption">Small rechargeable disc</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/neck.png" alt="Eulogy device worn around the neck" class="gallery-image">
+                    <div class="gallery-caption">Worn as a pendant</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/temple2.png" alt="Eulogy brain interface" class="gallery-image">
+                    <div class="gallery-caption">Be first to try our brain interface</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Experience Memories Like Never Before</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Request Your Kit</h3>
+                    <p>We send you everything you need to begin your memorial journey.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Meet Your Guide</h3>
+                    <p>They will introduce you to the process of reminescence.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Memory Curation</h3>
+                    <p>Your guide will help you select photos, videos, letters or music to serve as memory triggers.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Tell Your Story</h3>
+                    <p>Your guide helps you navigate through your memories, as you tell a story.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">5</div>
+                    <h3>Share the Experience</h3>
+                    <p>Select which memories to include in the final tribute.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pre-order Section -->
+    <section id="pre-order" class="pre-order">
+        <div class="container">
+            <div class="pre-order-card">
+                <h2>Limited Release - Reserve Your Eulogy Kit</h2>
+                <p>Due to high demand and our commitment to personalized service, Eulogy kits are being released in limited batches. Secure your place now.</p>
+                
+                <form class="pre-order-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" placeholder="Your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason for Interest</label>
+                        <select id="reason">
+                            <option value="">Select a reason</option>
+                            <option value="planning">Planning ahead for a loved one</option>
+                            <option value="loss">Recently experienced loss</option>
+                            <option value="professional">Professional interest (funeral services)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button type="submit" class="btn-primary">Pre-Order Now - $299 Deposit</button>
+                        <button type="button" class="btn-secondary">Join Waitlist - No Obligation</button>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <p class="small">Your deposit secures priority access. Full price: $1,999. Deposit is fully refundable.</p>
+                        <div class="waitlist-counter">
+                            <p>Join <strong>1,247</strong> others waiting to experience Eulogy</p>
+                        </div>
+                        <div class="urgency">
+                            <p>First batch shipping in: <span class="countdown">14 days</span></p>
+                            <p>Limited to 500 kits in initial release</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="key-features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>Immersive Photo Technology</h3>
+                    <p>Transform flat photographs into three-dimensional environments you can explore from new perspectives.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>Personalized Memory Guide</h3>
+                    <p>AI-powered guide helps navigate your memories and asks thoughtful questions to help recall important details.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>Multi-Sensory Experience</h3>
+                    <p>Incorporate music and ambient sounds that enhance the memory while moving freely within the memory space.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon"></div>
+                    <h3>Customizable Memorial Creation</h3>
+                    <p>Select which memories to include in the final tribute and create a curated journey through your loved one's life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Common Questions</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <div class="faq-question">How many photos do I need?</div>
+                    <div class="faq-answer">While our system can process up to 1,500 photos, we recommend a minimum of six different images for optimal results. The more diverse the photos, the richer the memorial experience will be.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What types of photos work best?</div>
+                    <div class="faq-answer">Clear photos that show the person in different settings and time periods work best. However, our technology can work with damaged or altered photos as well, using algorithmic sharpening to reveal details not visible in the original.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How long does the process take?</div>
+                    <div class="faq-answer">The entire process typically takes 2-3 weeks from receiving your kit to the final memorial creation. The memory collection sessions themselves usually require 3-5 hours spread across multiple days.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Who will see the final memorial?</div>
+                    <div class="faq-answer">You have complete control over who experiences the memorial. It can be shared at a funeral service, kept private for immediate family, or shared with a wider circle of friends and relatives.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is the experience emotionally difficult?</div>
+                    <div class="faq-answer">The process can be emotionally intense, but many users find it therapeutic. Our AI guide is designed to be supportive and sensitive, and you can pause or stop the process at any time.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is a memorial tribute video?</div>
+                    <div class="faq-answer">A memorial tribute video is a beautiful and meaningful way to say goodbye to a friend or family member. Eulogy's Immersive Memorial Experiences go beyond traditional videos, helping you illustrate how a person lived and honor their memory. They provide an opportunity for people to get to know different sides of your loved one through the story of the photos you share.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I select photos for a memorial tribute?</div>
+                    <div class="faq-answer">When selecting photos, consider your loved one's life and the themes that honor and represent that person. Each photo should reflect one of these themes. Look for images that show hobbies, passions, interests, personality, childhood moments, relationships with family and friends, special moments like graduations or weddings, and favorite travel destinations.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What is Eulogy's process for creating memorials?</div>
+                    <div class="faq-answer">Our process begins with the Eulogy kit, which includes the guide disc and setup instructions. Once activated, the AI guide helps you through five key steps: 1) Photo Collection - uploading or scanning cherished photographs, 2) Memory Mapping - the AI asks gentle questions about each photo, 3) Environment Creation - transforming flat photographs into 3D spaces, 4) Audio Integration - adding music, ambient sounds, or voice recordings, and 5) Memorial Curation - arranging memories in a meaningful sequence.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does the AI guide help with creating memorials?</div>
+                    <div class="faq-answer">Throughout the memorial creation process, your AI guide provides both emotional support and technical assistance, ensuring the experience is healing and meaningful. The guide helps you navigate through memories, asks thoughtful questions to help recall important details, and assists in creating a cohesive narrative of your loved one's life. The final memorial can be experienced privately or shared with family and friends during a service.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hiring Section -->
+    <section class="hiring">
+        <div class="container">
+            <h2>We're Hiring</h2>
+            <p class="hiring-subtitle">Join our team of engineers and account executives</p>
+            
+            <form class="hiring-form">
+                <div class="form-group">
+                    <label for="hiring-name">Full Name</label>
+                    <input type="text" id="hiring-name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="hiring-email">Email Address</label>
+                    <input type="email" id="hiring-email" placeholder="Your email">
+                </div>
+                <div class="form-group">
+                    <label for="hiring-position">Position</label>
+                    <select id="hiring-position">
+                        <option value="">Select a position</option>
+                        <option value="engineer">Engineer</option>
+                        <option value="account-exec">Account Executive</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hiring-resume">Resume/CV</label>
+                    <input type="file" id="hiring-resume">
+                </div>
+                
+                <button type="submit" class="btn-primary">Apply Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <h2>eulogy</h2>
+                    <p>thought to action</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:team@eulogymemorial.com">team@eulogymemorial.com</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <div class="footer-col">
+                    <h3>products</h3>
+                    <ul>
+                        <li><a href="#">eulogy</a></li>
+                        <li><a href="#">eulogy dev kit</a></li>
+                        <li><a href="#">eulogyGPT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>company</h3>
+                    <ul>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">invest</a></li>
+                        <li><a href="#">privacy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>resources</h3>
+                    <ul>
+                        <li><a href="#">apps</a></li>
+                        <li><a href="#">bounties</a></li>
+                        <li><a href="#">affiliate</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eulogy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

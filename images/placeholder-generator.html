@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eulogy Image Placeholders</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .image-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .image-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .image-description {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        svg {
+            border: 1px solid #ddd;
+            max-width: 100%;
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #3a86ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .instructions {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eulogy Image Placeholders</h1>
+    
+    <div class="instructions">
+        <p>These are placeholder SVG images for the Eulogy landing page. To use them:</p>
+        <ol>
+            <li>Right-click on an image and select "Save Image As..."</li>
+            <li>Save with the appropriate filename (shown in each section)</li>
+            <li>Place in the images directory</li>
+        </ol>
+        <p>Later, replace these with actual product images.</p>
+    </div>
+    
+    <div class="image-container">
+        <div class="image-item">
+            <div class="image-title">Hero Device Image (hero-device.png)</div>
+            <div class="image-description">Image of a person wearing the Eulogy pendant device</div>
+            <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                <rect width="600" height="400" fill="#121212"/>
+                
+                <!-- Person silhouette -->
+                <ellipse cx="300" cy="150" rx="70" ry="70" fill="#333"/>
+                <rect x="260" y="220" width="80" height="150" fill="#333"/>
+                
+                <!-- Pendant -->
+                <rect x="290" y="250" width="20" height="30" rx="5" fill="#3a86ff"/>
+                <line x1="300" y1="220" x2="300" y2="250" stroke="#888" stroke-width="2"/>
+                
+                <!-- Text -->
+                <text x="300" y="350" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Person wearing Eulogy pendant</text>
+                <text x="300" y="50" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">HERO IMAGE</text>
+            </svg>
+            <a href="#" class="download-btn" onclick="downloadSVG(this, 'hero-device.svg')">Download SVG</a>
+        </div>
+        
+        <div class="image-item">
+            <div class="image-title">Device Image (device.png)</div>
+            <div class="image-description">Close-up image of the Eulogy pendant device</div>
+            <svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="400" fill="#121212"/>
+                
+                <!-- Chain -->
+                <path d="M150,100 C150,50 250,50 250,100" stroke="#888" stroke-width="3" fill="none"/>
+                
+                <!-- Pendant -->
+                <rect x="175" y="150" width="50" height="80" rx="10" fill="#3a86ff"/>
+                <rect x="185" y="160" width="30" height="60" rx="5" fill="#121212"/>
+                <circle cx="200" cy="190" r="10" fill="#8338ec"/>
+                
+                <!-- Glow effect -->
+                <circle cx="200" cy="190" r="20" fill="#8338ec" opacity="0.3"/>
+                <circle cx="200" cy="190" r="30" fill="#8338ec" opacity="0.1"/>
+                
+                <!-- Text -->
+                <text x="200" y="300" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Eulogy pendant device</text>
+                <text x="200" y="50" font-family="Arial" font-size="24" fill="white" text-anchor="middle" font-weight="bold">DEVICE IMAGE</text>
+            </svg>
+            <a href="#" class="download-btn" onclick="downloadSVG(this, 'device.svg')">Download SVG</a>
+        </div>
+        
+        <div class="image-item">
+            <div class="image-title">Feature Icon (feature-icon.png)</div>
+            <div class="image-description">Icon for feature sections</div>
+            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3a86ff"/>
+                        <stop offset="100%" stop-color="#8338ec"/>
+                    </linearGradient>
+                </defs>
+                
+                <rect width="200" height="200" fill="#121212"/>
+                
+                <!-- Icon -->
+                <rect x="50" y="50" width="100" height="100" rx="20" fill="url(#gradient)"/>
+                <circle cx="100" cy="100" r="30" fill="#121212"/>
+                <path d="M85,100 L115,100 M100,85 L100,115" stroke="white" stroke-width="5"/>
+                
+                <!-- Text -->
+                <text x="100" y="180" font-family="Arial" font-size="14" fill="white" text-anchor="middle">Feature Icon</text>
+            </svg>
+            <a href="#" class="download-btn" onclick="downloadSVG(this, 'feature-icon.svg')">Download SVG</a>
+        </div>
+    </div>
+    
+    <script>
+        function downloadSVG(link, filename) {
+            const svg = link.previousElementSibling;
+            const serializer = new XMLSerializer();
+            const svgString = serializer.serializeToString(svg);
+            const svgBlob = new Blob([svgString], {type: 'image/svg+xml'});
+            const url = URL.createObjectURL(svgBlob);
+            
+            const downloadLink = document.createElement('a');
+            downloadLink.href = url;
+            downloadLink.download = filename;
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
